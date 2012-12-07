@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#282828"
+            android:text="@string/back_btn"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+		android:layout_marginTop="100dip" >
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:paddingLeft="10dip"
+            android:text="Year"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:paddingLeft="10dip"
+            android:text="Month"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:paddingLeft="10dip"
+            android:text="Date"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:paddingLeft="10dip"
+            android:text="Hour"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:paddingLeft="10dip"
+            android:text="Minute"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/main_layout_input_year"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/main_layout_input_month"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/main_layout_input_date"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/main_layout_input_hour"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/main_layout_input_minute"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_layout_set_alarm"
+        android:layout_width="325dip"
+        android:layout_height="40dip"
+        android:text="Set Alarm" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="app_name">Easy Meeting</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Easy Meeting</string>
+    <string name="loading_text">Easy Meeting!!!</string>
+    
+    <!-- TextView -->
+    <string name="login_text_id">아  이  디</string>
+    <string name="login_text_pw">비밀번호</string>
+    
+    <string name="nfc_title">NFC 로그인</string>
+    <string name="nfc_layout">인식이 안될 수도 있으니 2~3번 카드를 찍어주세요.</string>
+    
+    <string name="no_group_text">가입한 그룹이 없습니다.</string>
+    
+    <string name="group_name">그룹 이름</string>
+    <string name="group_number">그룹 인원</string>
+    
+    <string name="meeting_name">모임 이름</string>
+    <string name="meeting_contents">모임 내용</string>
+    <string name="meeting_date">모임 날짜</string>
+    
+    <string name="my_meeting">내 모임 일정</string>
+    <string name="new_meeting">새로운 모임</string>
+    
+    <string name="join_text_id">아이디 입력</string>
+    <string name="join_text_pw">비밀번호 입력</string>
+    <string name="join_text_check_pw">비밀번호 체크</string>
+    <string name="join_text_nickname">닉네임 입력</string>
+    <string name="join_text_phone">핸드폰 번호 입력</string>
+    
+    <string name="create_group_name">그룹명 입력</string>
+    <string name="create_group_pwd">비밀번호 입력</string>
+    <string name="create_group_chk_pwd">비밀번호 체크</string>
+    <string name="create_group_info">소개말</string>
+    <string name="group_create_date">생성일</string>
+    <string name="create_group">그룹 생성</string>
+    <string name="search_loca">장소 검색</string>
+    
+    <string name="latitude">Lat = 0.0</string>
+    <string name="longitude">Lon = 0.0</string>
+    
+    <!-- 글쓰기 -->
+    <string name="write_group">그룹 선택</string>
+    <string name="write_title">제목</string>
+    <string name="write_content">내용</string>
+    <string name="write_date">모임 예정일</string>
+    <string name="write_loca">위치</string>
+    <string name="create_date">생성일</string>
+    <string name="btn_save">저장</string>
+    <string name="call">번호 검색</string>
+    
+    <!-- 버튼 이름들 -->
+    <string name="login_btn">로그인</string>
+    <string name="join_btn">회원가입</string>
+    <string name="back_btn">뒤로가기</string>
+    <string name="write_btn">글쓰기</string>
+    <string name="my_group_btn">내 그룹</string>
+    <string name="map_btn">위치</string>
+    <string name="make_group_btn">새 그룹 생성</string>
+    <string name="find_group_btn">그룹 찾기</string>
+    <string name="join_group_btn">그룹 가입</string>
+    <string name="secede_group_btn">그룹 탈퇴</string>
+    <string name="complete_btn">완료</string>
+    <string name="cancel_btn">취소</string>
+	<string name="join_now_btn">가입하기</string>
+	
+	<!--  BluetoothChat -->
+    <string name="send">전송</string>
+    <string name="not_connected">장치에 연결되지 않습니다.</string>
+    <string name="bt_not_enabled_leaving">블루투스를 사용할 수 없습니다.</string>
+    <string name="title_connecting">연결중입니다.</string>
+    <string name="title_connected_to">연결되었습니다.</string>
+    <string name="title_not_connected">연결되지 않습니다.</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">연결할 기기를 찾고 있습니다.</string>
+    <string name="select_device">연결할 기기를 선택하세요</string>
+    <string name="none_paired">기기가 없습니다.</string>
+    <string name="none_found">기기를 찾을 수 없습니다.</string>
+    <string name="title_paired_devices">연결된 기기</string>
+    <string name="title_other_devices">연결 가능한 다른 기기</string>
+    <string name="button_scan">기기 검색</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">안전연결</string>
+    <string name="insecure_connect">불안정연결</string>
+    <string name="discoverable">내 기기 검색 허용</string>
+    
+    <string name="info">버전 1.0.0\nEASY MEETING 2012\nEASY MEETING은 UXM Inc.의 상표입니다.\n모든 권리는 저작권자에게 있습니다.\n\n 안드로이드용 EASY MEETING은\n오픈 소스 소프트웨어를 기반으로\n만들어졌습니다.</string>
+</resources>

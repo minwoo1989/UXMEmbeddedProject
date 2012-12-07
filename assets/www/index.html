@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Embedded Project</title>
+	<style type="text/css">
+	html { height: 100% }
+	body { height: 100%; margin: 0; padding: 0 }
+	#map_canvas { height: 100% }
+	</style>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" charset="utf-8">
+	var map = null;
+	var marker = null;
+	var inputLat = null;
+	var inputLon = null;
+	var latitude = 0.0;
+	var longitude = 0.0;
+	
+    function displayMap() {
+		var latLng = new google.maps.LatLng(37.222286, 127.186059);
+		var mapOptions ={
+			zoom: 15,
+			center: latLng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			navigationControl: true,
+			navigationControlOptions: {
+				position: google.maps.ControlPosition.TOP_RIGHT,
+				style: google.maps.NavigationControlStyle.DEFAULT
+			}
+		};
+		
+		var mapDiv = document.getElementById("map");
+		
+		map = new google.maps.Map(mapDiv, mapOptions);
+		
+		// 클릭했을 때
+		google.maps.event.addListener(map, 'click', function (event) {
+			setMarker(event.latLng);
+			
+			updateLocation(event.latLng);
+		});
+		
+		// input 초기화
+		inputLat = document.getElementById("lat");
+		inputLon = document.getElementById("lon");
+		
+		inputLat.value = 0;
+		inputLon.value = 0;
+    }
+    
+	function setMarker(location) {
+		// 이전 마커를 삭제
+		if (marker != null) {
+			marker.setOptions({
+				map: null,
+				visible: false
+			});
+		}
+	
+		var clickedLocation = new google.maps.LatLng(location);
+		
+		// 새 마커를 등록
+		marker = new google.maps.Marker({
+			position: location, 
+			map: map
+		});
+	}
+	
+	function updateLocation(location) {
+		inputLat.value = location.lat();
+		inputLon.value = location.lng();
+		
+		latitude = location.lat();
+		longitude = location.lng();
+	}
+	
+	function clickButton() {
+		if (latitude != 0 && longitude != 0)
+			window.javaScriptI.clickButton(latitude, longitude);
+		else
+			window.javaScriptI.clickButton(0.0, 0.0);
+	}
+	</script>
+	<script src="http://debug.phonegap.com/target/target-script-min.js#webspherenotes.com"></script>
+</head>
+<body onload="displayMap()">
+	<button type="button" style="width:50%; height:40px" onclick="clickButton()">위치 등록</button>
+	<p>
+		Lat: <input type="text" id="lat" readonly="readonly" style="width:20" />
+		Lon: <input type="text" id="lon" readonly="readonly" style="width:20" /><br />
+	</p>
+	<div id="map" style="width:100%; height:100%"></div>
+</body>
+</html>

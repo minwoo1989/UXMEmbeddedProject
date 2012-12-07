@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/createGrpBc"
+	        android:layout_width="0px"
+	        android:layout_height="50dip"
+	        android:layout_weight="50"
+	        android:background="#282828"
+	        android:text="@string/back_btn"
+	        android:textColor="#ffffff"/>
+	    
+	</LinearLayout>
+    <!-- 그룹명 입력 -->
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dip"
+	    android:text="@string/create_group_name"/>
+	
+	<EditText 
+	    android:id="@+id/createGrpName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="text"/>
+	
+	<!-- 비밀번호 -->
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dip"
+	    android:text="@string/create_group_pwd"/>
+	
+	<EditText 
+	    android:id="@+id/createGrpPwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textPassword"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dip"
+	    android:text="@string/create_group_chk_pwd"/>
+	
+	<EditText 
+	    android:id="@+id/createGrpChkPwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textPassword"/>
+	
+	<!-- 그룹 소개말 -->
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dip"
+	    android:text="@string/create_group_info"/>
+	
+	<EditText 
+	    android:id="@+id/createGrpInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="text"/>
+	
+	<Button 
+	    android:id="@+id/createGrp"
+	    android:layout_width="90dip"
+	    android:layout_height="40dip"
+	    android:layout_gravity="center"
+	    android:background="#282828"
+	    android:text="@string/create_group"
+	    android:textColor="#ffffff"/>
+</LinearLayout>

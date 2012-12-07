@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0px"
+            android:layout_height="40dip"
+            android:layout_weight="50"
+            android:background="#282828"
+            android:text="@string/cancel_btn"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/write_group" />
+
+            <Button
+                android:id="@+id/meetingListBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meeting_name" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/write_title" />
+
+            <EditText
+                android:id="@+id/meeting_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/meeting_contents" />
+
+            <EditText
+                android:id="@+id/meetingContents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/meeting_date" />
+
+            <DatePicker
+                android:id="@+id/mDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TimePicker
+                android:id="@+id/mTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/write_loca" />
+
+            <Button
+                android:id="@+id/searchLoca"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="@string/search_loca" />
+
+            <TextView
+                android:id="@+id/latText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/latitude" />
+            
+            <TextView
+                android:id="@+id/lonText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/longitude" />
+            
+            <Button
+                android:id="@+id/completeButton"
+                android:layout_width="90dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:text="@string/complete_btn" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
